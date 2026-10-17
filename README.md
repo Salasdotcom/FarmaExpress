@@ -30,11 +30,15 @@ FarmaExpress/
 │   ├── diagrama-secuencia-1.svg
 │   └── diagrama-secuencia-2.svg
 ├── docs/
+│   ├── ADR.pdf
+│   ├── BitacoraIA.pdf
 │   ├── Equipo10-FarmaExpress-Report.doxc
 │   ├── Equipo10-FarmaExpress-Report.pdf
 │   ├── Matriz_FarmaExpress-3.pdf
 │   └── adr.txt
 ├── src/
+│   └── farma_express.py
 ├── tests/
+│   └── test_farmaexpress_architecture.py
 └── README.md
 ```
