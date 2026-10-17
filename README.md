@@ -1,2 +1,40 @@
-# FarmaExpress - Sistema de Gestión Farmacéutica y Arquitectura de Software 
-## 📌 Descripción de la Empresa \*\*FarmaExpress\*\* es una cadena farmacéutica enfocada en la modernización de sus procesos de venta en mostrador, control de inventarios, trazabilidad de medicamentos regulados y gestión de caducidades. Este repositorio consolida la documentación de requerimientos de negocio y el diseño de la arquitectura de software basada en \*\*Domain-Driven Design (DDD)\*\*, \*\*Arquitectura Limpia\*\*, \*\*CQRS\*\* y el patrón transaccional \*\*Unit of Work (UoW)\*\*. --- ## 🎯 Alcance del Proyecto El proyecto abarca la transformación integral desde el análisis de negocio (Unidad 2) hasta el diseño detallado de la estructura del software (Unidad 3): \* \*\*Análisis de Requerimientos y Validación (Unidad 2):\*\* \* Especificación del Documento de Requerimientos de Negocio (\*\*BRD\*\*). \* Definición de \*\*Historias de Usuario (US)\*\* con criterios de aceptación en sintaxis \*\*Gherkin\*\* (\*Given-When-Then\*). \* Modelado de Procesos de Negocio en \*\*BPMN\*\* con manejo de gateways (\*XOR, AND, OR\*). \* Matriz de \*\*Trazabilidad\*\* para asegurar la cobertura de necesidades de negocio y detección de brechas (\*gaps\*). \* Aplicación de la metodología con \*\*IA Generativa\*\* (\*"La IA genera, el analista revisa, el stakeholder valida"\*). \* \*\*Diseño de Arquitectura de Software y Patrones (Unidad 3):\*\* \* Mapa de Dominio Rico (\*\*DDD\*\*) identificando Entidades, Value Objects, Aggregates, Domain Services y Domain Events. \* Capa de Servicios (\*\*Service Layer\*\*) enfocada en la orquestación de casos de uso sin anemia de dominio. \* Desacoplamiento de infraestructura mediante \*\*Repository Pattern\*\* e \*\*Inversión de Dependencias\*\*. \* Delimitación transaccional atómica mediante \*\*Unit of Work (UoW)\*\*. \* Segregación de Responsabilidades de Lectura y Escritura (\*\*CQRS\*\*) para optimizar el rendimiento. \* Cumplimiento de los principios \*\*SOLID\*\* 
+# FarmaExpress - Sistema de Gestión Farmacéutica y Arquitectura de Software
+Integrantes
+Colons can be used to align columns.
+
+| Alumno      | Matricula        | 
+| ------------- |:-------------:| 
+| Emiliano Salas Padron     | 2157333 | 
+| Jesus Adrian De la Cruz Dominguez    | 2156493  | 
+| Joel Guadalupe Taméz Olmos | 2158224      | 
+
+Profesor: Miguel Ángel Gómez Marroquín
+# Alcance 
+
+**Proceso principal** Venta en mostrador de medicamentos generales y controlados, validación de recetas médicas, gestión de inventario por lotes y caducidades , excepciones autorizadas por el Responsable de Farmacia y fiscalización sanitaria. 
+
+* **CU-01 Registrar Venta:** Cobro en mostrador, validación de receta y emisión de ticket.
+* **CU-02 Autorizar Excepción:** Aprobación trazable por el Responsable de Farmacia.
+* **CU-03 Cancelar Venta:** Anulación con comprobación de caja abierta y reingreso de stock.
+* **CU-04 Recall Sanitario:** Bloqueo masivo de lotes por alerta
+* **CU-05 Resurtido:** Propuesta de Compras y autorización del Responsable de Farmacia.
+
+## Estructura del repositorio
+
+
+```text
+FarmaExpress/
+├── diagrams/
+│   ├── BPMN.pdf
+│   ├── Diagrama-dominio.svg
+│   ├── diagrama-secuencia-1.svg
+│   └── diagrama-secuencia-2.svg
+├── docs/
+│   ├── Equipo10-FarmaExpress-Report.doxc
+│   ├── Equipo10-FarmaExpress-Report.pdf
+│   ├── Matriz_FarmaExpress-3.pdf
+│   └── adr.txt
+├── src/
+├── tests/
+└── README.md
+```
